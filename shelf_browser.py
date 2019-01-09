@@ -1,6 +1,6 @@
 '''
 NAME
-	shelf_browser - a small GUI to view read-only contents of shelve files
+	shelf_browser - a small GUI to view contents of shelve files (read only)
 
 
 DESCRIPTION
