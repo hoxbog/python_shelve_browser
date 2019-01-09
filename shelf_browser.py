@@ -1,32 +1,3 @@
-#this is a complete mess but does do the job (just about) and proves the concept
-#work to do:
-# 1. encapsulate tk elements in classes and revise current_shelf variable and shelf handling.  //DONE
-# 2. Eliminate duplicated code by moving to functions											//DONE (mostly)
-# 3. add search function for frame1 (list items) and frame2 (text output of elements)			//DONE
-# 4. add "jump to" ELEMENTS in frame2  (maybe right-click context??)  //DONE
-# 5. make frame2 read-only with copy-paste functions  			//DONE
-# 6. add ctrl-a to select all content in frame2					//DONE
-# 7. implement font family to avoid constantly setting fonts.   //DONE
-# 8. implement font resizing properly. 							//DONE
-# 9. implent sort for listbox 									//DONE
-# 10. implement search.											//DONE
-# 11. implement URL click.										//DONE
-# 12. implement <html> recognition for not response input or add html tick box.		  //STILL TO DO IF USEFUL	
-# 13. consider starting the 'next' of the search at the cursor rather than always 0   //STILL TO DO IF USEFUL (possibly not)
-# 14. highlight search result text in list box. 				//cant be done without rebuilding listbox with text widget
-# 15. improve fonts on windows-1252								//DONE
-# 16. add shelf details menu type notifier using dbm.whichdb						//DONE
-# 17. add functionality to save shelf in dumbdbm format for use with windows.		//DONE
-# 18. print file open errors to message boxes (capture err text from err event)		//DONE
-# 19. clean up order of functions and add comments
-# 20. add specific check for existance of file selected.							//DONE  
-#						(because windows does not register cancel as an error)  
-# 21. create popup menu class to avoid repeating the code in results and shelf manager  //DONE
-# change __default font in FindEntry to be a public properts so it can be changed.
-# 22. improve tk_selectall and tk_copy to handle both evt and widget passed.		//DONE
-# 23. add paste functionality for Entry and create popup menu to copy/paste/cut?? to FindEntry  //DONE
-
-
 '''
 NAME
 	shelf_browser - a small GUI to view read-only contents of shelve files
@@ -34,10 +5,10 @@ NAME
 
 DESCRIPTION
 	This is a small project primarily undertaken for the purpose of learning
-	tkinter but solving a genuine need to quickly access and view the 
+	tkinter but solving a real need to quickly access and view the 
 	contents of shelf files created by the shelve module.  The application 
-	is meant purely to provide a quick read-only look at the contents and not
-	to provide more extensive interactions with the shelf file. 
+	is currently meant purely to provide a quick read-only look at the 
+	contents and not to offer more extensive interactions with the shelf file. 
 
 	The classes contained within are meant to be used together to form the 
 	whole application but where possible I have built them so they are 
