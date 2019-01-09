@@ -4,16 +4,16 @@ Python tkinter program to quickly view contents of a shelve file
 Written and tested on Python 3.5;  tested on Linux (ubuntu 16.04 LTS) and Windows 10.
 
 Required Python Modules:
-  math
-  os
-  functools
-  time
-  shelve
-  requests
-  bs4
-  webbrowser
-  dbm
-  tkinter
+	math
+	os
+	functools
+	time
+	shelve	
+	requests
+	bs4
+	webbrowser
+	dbm
+	tkinter
 
 DESCRIPTION
 	This is a small project primarily undertaken for the purpose of learning
